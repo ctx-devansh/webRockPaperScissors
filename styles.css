@@ -16,6 +16,11 @@
     left: 25%;
 }
 
+.optionsTable{
+    position: absolute;
+    bottom: 25%;
+}
+
 #cpuLabel{
     position: absolute;
     text-align: center; 
