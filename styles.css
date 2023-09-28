@@ -16,8 +16,9 @@
     left: 25%;
 }
 
-.optionsTable{
+.optionsRow{
     position: absolute;
+    left: 50%;
     bottom: 25%;
 }
 
