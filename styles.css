@@ -1,0 +1,25 @@
+.playArea{
+    width: auto;
+    height: auto;
+}
+
+.Labels{
+    font-family: Aleo;
+    font-size: 30px;
+}
+
+#playerLabel{
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    top: 60px;
+    left: 25%;
+}
+
+#cpuLabel{
+    position: absolute;
+    text-align: center; 
+    width: 200px;
+    top: 60px;
+    right: 25%;
+}
