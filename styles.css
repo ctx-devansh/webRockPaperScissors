@@ -1,31 +1,77 @@
 .playArea{
     width: auto;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 
 .Labels{
     font-family: Pixelify Sans;
     font-size: 50px;
+    top: 80px;
 }
 
 #playerLabel{
     position: absolute;
     text-align: center;
     width: 200px;
-    top: 60px;
+    
     left: 25%;
 }
 
-.optionsRow{
+#playerChoice{
     position: absolute;
-    left: 50%;
-    bottom: 25%;
+    margin-left: auto;
+    width: 128px;
+    height: 128px;
+    top: 100px;
+    left: 25%;
+
 }
 
 #cpuLabel{
     position: absolute;
     text-align: center; 
     width: 200px;
-    top: 60px;
     right: 25%;
+}
+
+#cpuChoice{
+    position: absolute;
+    margin: auto;
+    width: 128px;
+    height: 128px;
+    top: 100px;
+    right: 25%;
+}
+
+.optionsTable{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25%;
+}
+
+.optionsButton{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    font-family: Pixelify Sans;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+.optionsButton:hover{
+    border: 2px solid #000000;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 0px ;
 }
