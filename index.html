@@ -2,11 +2,13 @@
 
 <link rel="stylesheet" href="styles.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway|Aleo|Pixelify Sans' rel='stylesheet' >
-<script src = "function.js"></script>
+
 
 <body>
+    <div class="title">
+        Rock, Paper, Scissors
+    </div>
     <div class="playArea">
-
     
         <div class="Labels" id="playerLabel">
             PLAYER
@@ -17,15 +19,22 @@
             CPU
             <img id="cpuChoice">
         </div>
-    
-    
+        
+        <div id="resultCard">
+            <div class="Labels" id="resultLabel"></div>
+            <div class="Labels" id="scoreBoard">0 - 0</div>
+            <button class="optionsButton" id="playAgain" onclick='playAgain()'>Play Again!</button>
+        </div>
+
         <div class="optionsTable">
             <button class="optionsButton" id="ROCK" onClick='playGame(ROCK)'>Rock</button>
             <button class="optionsButton" id="PAPER" onClick='playGame(PAPER)'>Paper</button>
             <button class="optionsButton" id="SCISSORS" onClick='playGame(SCISSORS)'>Scissors</button>
         </div>
-    
+
     </div>
+
+    <script src = "function.js"></script>
 </body>
 
 
