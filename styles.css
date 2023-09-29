@@ -7,45 +7,71 @@
     flex-direction: column;
 }
 
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: Pixelify Sans;
+    font-size: 55px;
+    font-weight: bold;
+}   
+
 
 .Labels{
     font-family: Pixelify Sans;
-    font-size: 50px;
-    top: 80px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 160px;
 }
 
 #playerLabel{
     position: absolute;
-    text-align: center;
     width: 200px;
-    
     left: 25%;
 }
 
 #playerChoice{
-    position: absolute;
-    margin-left: auto;
     width: 128px;
     height: 128px;
-    top: 100px;
-    left: 25%;
-
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 #cpuLabel{
     position: absolute;
-    text-align: center; 
     width: 200px;
     right: 25%;
 }
 
 #cpuChoice{
-    position: absolute;
-    margin: auto;
     width: 128px;
     height: 128px;
-    top: 100px;
-    right: 25%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#resultCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 240px;
+}
+
+#scoreBoard{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#playAgain{
+    margin-top: 30px;
 }
 
 .optionsTable{
@@ -53,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 25%;
+    bottom: 16%;
 }
 
 .optionsButton{
