@@ -68,6 +68,21 @@ function checkNext(){
         if(PLAYER_WINS === 3){
             document.getElementById("resultLabel").textContent = "You Won!";
             document.getElementById("resultLabel").style.color = "#26c808";
+            confetti({
+                particleCount: 1000,
+                spread: 200,
+                origin: { y:1,x:0}
+            });
+            confetti({
+                particleCount: 1000,
+                spread: 200,
+                origin: { y:1,x:1}
+            });
+            confetti({
+                particleCount: 500,
+                spread: 100,
+                origin: { y:1.2,x:0.5}
+            });
         }else{
             document.getElementById("resultLabel").textContent = "CPU Won!";
             document.getElementById("resultLabel").style.color = "#FF0000";
@@ -86,8 +101,6 @@ function playAgain(){
     PLAYER_WINS = 0;
     CPU_WINS = 0;
     document.getElementById("scoreBoard").textContent = PLAYER_WINS + " - " + CPU_WINS;
-    document.getElementById("playerChoice").src = null;
-    document.getElementById("cpuChoice").src = null;
 
 }
 
